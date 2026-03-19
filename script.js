@@ -96,8 +96,8 @@ const entries = {
       <ul>
         <li><a href="mailto:lynchd1@fultonschools.org">School Email Address</a></li>
         <li><a href="mailto:mrlynchteaches@gmail.com">Personal Email Address</a></li>
-        <li>Office hours are from 8-4 pm and my response time is between 1-2 business days.</li>
         <li><a href="https://www.linkedin.com/in/donald-lynch-59368710/">Connect on LinkedIn</a></li>
+		<li>I respond more frequently to my school email or in LinkedIn.</li>
       </ul>
     `
   }
