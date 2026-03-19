@@ -14,7 +14,7 @@
 html, body {
   margin: 0;
   min-height: 100%;
-  font-family: Luminari, "fantasy", serif;
+  font-family: Goudy Old Style, "Goudy Old Style", serif;
   color: var(--text);
   background: linear-gradient(180deg, #7f6c4c 0%, #c8b48e 100%);
 }
