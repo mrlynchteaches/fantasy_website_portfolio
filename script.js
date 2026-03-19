@@ -232,8 +232,7 @@ function stopAvatar() {
   }
   statusBox.innerHTML = `
     <h3>Map Interaction Updated</h3>
-    <p>Mouse interactions target the visible text labels on the map. Avatar exploration uses separate hidden target points placed on the image/icon locations for each region.</p>
-    <p><strong>Current labels:</strong> About Me, Skills, Interests, Resume, Portfolio, Blog, and Contact.</p>
+    <p>Mouse interactions target the visible text labels on the map. Avatar exploration uses separate hidden target points placed near the image/icon locations for each region.</p>
   `;
 }
 
