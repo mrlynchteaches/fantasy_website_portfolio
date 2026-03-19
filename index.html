@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Lynch Map Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <aside class="panel intro-panel">
+      <h1>Welcome traveler!</h1>
+      <p>Please take time to explore the regions of the map and learn more about Mr. Lynch!</p>
+
+      <section class="quest-log" aria-labelledby="quest-title">
+        <h2 id="quest-title">Quests</h2>
+        <ul>
+          <li>Click any visible map text label to open a pop-up panel.</li>
+          <li>Or enable avatar exploration and move around the map with WASD or arrow keys.</li>
+          <li>Press Enter when the avatar is near the image/icon point of interest.</li>
+	  <li>Contact Mr. Lynch via his school or personal email to learn more or to collab on lesson plans, PBLs, 	or to learn more about me!</li>
+        </ul>
+      </section>
+
+      <div class="avatar-tools">
+        <button id="toggleAvatarBtn" class="tool-btn" type="button">Enable Avatar Exploration</button>
+        <p class="avatar-note">Avatar exploration is optional. Mouse users can still click the text labels on the 	map to open the pop-up windows.</p>
+      </div>
+
+      <section class="status-box" aria-live="polite" id="statusBox">
+        <h3>Map Interaction Updated</h3>
+        <p>Mouse interactions target the visible text labels on the map. Avatar exploration uses separate hidden 	target points placed on the image/icon locations for each region.</p>
+      </section>
+    </aside>
+
+    <section class="panel map-card" aria-labelledby="map-heading">
+      <h2 id="map-heading" class="sr-only">Interactive map of Mr. Lynch</h2>
+
+      <div class="map-stage" id="mapStage">
+        <img src="Carey Lynch Web Portfolio Map.jpg" alt="Fantasy-style portfolio map with labeled points of interest including About Me, Skills, Interests, Resume, Portfolio, Blog, and Contact." />
+
+        <div id="avatar" class="avatar avatar--hidden" aria-hidden="true" title="Website explorer avatar"></div>
+
+        <!-- Mouse click areas: aligned to the visible text already printed on the map -->
+        <button class="poi" style="left:10.8%; top:24.2%;" data-key="about" data-avatar-x="16.2" data-avatar-y="21.8" aria-label="Open About Me panel"><span class="sr-only">About Me</span></button>
+        <button class="poi" style="left:20.2%; top:43.5%;" data-key="skills" data-avatar-x="16.5" data-avatar-y="39.2" aria-label="Open Skills panel"><span class="sr-only">Skills</span></button>
+        <button class="poi" style="left:9.7%; top:67.2%;" data-key="interests" data-avatar-x="14.6" data-avatar-y="57.4" aria-label="Open Interests panel"><span class="sr-only">Interests</span></button>
+        <button class="poi" style="left:33.2%; top:88.2%;" data-key="resume" data-avatar-x="25.8" data-avatar-y="82.6" aria-label="Open Resume panel"><span class="sr-only">Resume</span></button>
+        <button class="poi" style="left:73.7%; top:74.6%;" data-key="portfolio" data-avatar-x="70.8" data-avatar-y="64.1" aria-label="Open Portfolio panel"><span class="sr-only">Portfolio</span></button>
+        <button class="poi" style="left:85.4%; top:90.8%;" data-key="blog" data-avatar-x="83.0" data-avatar-y="79.8" aria-label="Open Blog panel"><span class="sr-only">Blog</span></button>
+        <button class="poi" style="left:92.8%; top:36.6%;" data-key="contact" data-avatar-x="86.0" data-avatar-y="28.8" aria-label="Open Contact panel"><span class="sr-only">Contact</span></button>
+      </div>
+
+      <div class="map-key" aria-hidden="true">
+        <span class="chip">Mouse clicks target text labels.</span>
+        <span class="chip">Avatar Enter key targets map images/icons.</span>
+        <span class="chip">Thank you to pngtree for the wizard avatar!</span>
+	<span class="chip">Thank you to Inkarnate for the ability to make the fantasy map!</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <article class="modal">
+      <header class="modal-header">
+        <h2 id="modalTitle">Point of Interest</h2>
+        <button class="close-btn" id="closeModal" aria-label="Close panel">Close</button>
+      </header>
+      <div class="modal-body" id="modalBody"></div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
