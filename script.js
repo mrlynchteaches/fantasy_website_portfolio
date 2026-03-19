@@ -45,20 +45,31 @@ const entries = {
             <p><i>Teaching Experience</i><p>		
 	    <p><b>Innovation Academy</b>, Fulton County Schools, 2022-Present.</p>
 	<ul>
-		<li>Taught AP Human Geography and AP World History, maintaining 3+ scores of 80% and 94% 			respectively.</li>
-		<li>Led the Professional Learning Committee and created professional learning goals that aligned 		with the school strategic plan to be delivered during 6 Innovation Academy professional learning 		days spread throughout the year.</li>
-		<li>Chaired the School Governance Council budget committee and made recommendations for 			discretionary spending of $45,000 a year, ensuring alignment of spending with school strategic 			plan, mission, and vision and alignment with FCS guildelines for spending.</li>
-		<li>Sponsored 9th and 10th grade class council, organizing student events and staff appreciation 		events.</li>
+		<li>Subjects taught: AP Human Geography, AP World History, Scientific Research (Honors).</li>
+		<li>Curriculum mapping, curriculum and assessment development, and student data analysis for multiple subject areas, with specific focus on 		project-based learning as an instructional framework.</li>
+		<li>Established AP Human Geography as a Social Studies elective for students with year over year increased enrollment.</li>
+		<li>Increased and maintained AP Human Geography and AP World History scores of 3 or higher at 80% and 95% respectively.</li>
+		<li>Led student flexible learning sessions for IT students on ArcGIS, Ethical Dilemmas in IT, Cultural Landscape Design and Blender 3D 			Modeling for Video Games.</li>
+		<li>Led the development and implementation of professional learning programs for school-based professional learning days, with a focus on 		project-based learning to enhance instructional practices and student engagement.</li>
+		<li>Increased teacher implementation of Gold Standard PBL from 20% to 75% within 2 years.</li>
+		<li>Collaborated with teachers in all departments to develop course specific project-based learning experiences for students and to design 		core content adjacent lessons for our CTAE Flex Learning Days.</li>
+		<li>Served as committee co-lead for Phoenix Project, a school-wide project-based learning experience that culminates in a public showcase of 		prototypes and solutions addressing a global problem.</li>	
+		<li>Chaired the budget committee for the school governance council where I reviewed teacher purchase requests for their alignment with the 		school strategic plan and district purchasing requirements for $45,000 in discretionary spending.</li>
+		<li>Sponsored 9th and 10th grade class council, organizing student events and staff appreciation events.</li>
 	</ul>
 	    <p><b>Campbell High School</b>, Cobb County Schools, 2011-2022.</p>
 	<ul>
-		<li>Taught on-level World History, Economics, Government, AP Human Geography, IB History, and IB 		Theory of Knowledge.</li>
-		<li>Increased student achievement in Economics EOC from 34% earning proficient or distinguished 		learning scores to 78%.</li>
+		<li>Subjects taught: IB History (20th C), IB Theory of Knowledge, AP Human Geography, Economics, World History, English Language Learner 		small group World History, English Language Learner co-teacher for Economics and Government.</li>
+		<li>Curriculum mapping, curriculum and assessment development, and student data analysis for multiple subject areas.</li>
+		<li>Increased student achievement in Economics EOC from 34% earning proficient or distinguished learning scores to 78%.</li>
 		<li>Increased student achievement in AP Human Geography from 52% earning 3+ to 85%.</li>
-		<li>Served on Guiding Coalition, a body made up of admin, department chairs, and selected 			teachers, whose goal was to perform strategic planning and develop a school mission and vision 			that aligned with district strategic plans and goals.</li>
-		<li>Performed initaitive inventory, EOC data analysis, and SWOT analysis and presented information 		to guiding coalition for strategic planning efforts.</li>
-		<li>Developed professional learning materials to support on boarding of new teachers to Cobb 			County Schools.</li>
-		<li>Coached girls soccer at the varsity and junior varsity levels earning JV's first undefeated 		season and V's first winning record, first playoff birth, first playoff win, first win over a top 		10 opponent, and first top 10 ranking.</li>
+		<li>Increased student achivement in IB History from 85% earning 4+ to 95%.</li>
+		<li>Served as IB Extended Essay Coordinator, utilizing Managebac LMS for student extended essay progress and submission.</li>
+		<li>Served on Guiding Coalition, a body made up of admin, department chairs, and selected teachers, whose goal was to perform strategic 		planning and develop a school mission and vision that aligned with district strategic plans and goals.</li>
+		<li>Performed initaitive inventory, EOC data analysis, and SWOT analysis and presented information to guiding coalition for strategic 			planning efforts.</li>
+		<li>Developed professional learning materials to support on boarding of new teachers to Cobb County Schools.</li>
+		<li>Coached girls soccer at the varsity and junior varsity levels earning JV's first undefeated season and V's first winning record, first 		playoff birth, first playoff win, first win over a top 10 opponent, and first top 10 ranking.</li>
+		<li>Established Campbell High School Soccer Booster organization as a 501(c)(3) tax exempt body.</li>
 	</ul>
             <p><i>Education and credentials</i></p>
 	<ul>
