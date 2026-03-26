@@ -82,7 +82,7 @@ const entries = {
             <p><i>Professional achievements</i></p>
 	<ul>
 		<li>Dr. Martin Luther King Jr. Citizenship Award, Campbell High School, 2016.</li>
-		<li>5 times teacher of the month for innovative practices, collaboration, and new teacher orientation.</li>
+		<li>5 time teacher of the month for innovative practices, collaboration, and new teacher orientation.</li>
 
         </ul>
     `
