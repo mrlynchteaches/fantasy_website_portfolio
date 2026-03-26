@@ -355,9 +355,9 @@ body { min-height: 100vh; }
   .modal-body { padding: 14px; font-size: 0.96rem; }
   .avatar { width: 24px; height: 36px; }
   .poi[data-key="about"] { width: 110px; }
-  .poi[data-key="interests"] { width: 76px; }
-  .poi[data-key="resume"] { width: 102px; }
-  .poi[data-key="portfolio"] { width: 100px; }
-  .poi[data-key="blog"] { width: 62px; }
-  .poi[data-key="contact"] { width: 80px; }
+  .poi[data-key="interests"] { width: 110px; }
+  .poi[data-key="resume"] { width: 110px; }
+  .poi[data-key="portfolio"] { width: 110px; }
+  .poi[data-key="blog"] { width: 110px; }
+  .poi[data-key="contact"] { width: 110px; }
 }
