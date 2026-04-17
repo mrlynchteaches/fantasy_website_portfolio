@@ -6,7 +6,7 @@
   <title>Mr. Lynch Projects Map</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    /* Local fallback styles so the home button is visible even if the shared CSS differs */
+    /* Local fallback styles so the page-specific controls remain visible */
     .home-button-wrap {
       margin: 0 0 12px;
     }
@@ -31,6 +31,35 @@
       justify-content: flex-end;
       align-items: center;
       padding: 0 4px 10px;
+    }
+
+    /* Visible map text labels that double as the mouse-click buttons */
+    .project-label {
+      width: auto !important;
+      height: auto !important;
+      min-width: 0;
+      padding: 2px 6px;
+      background: transparent;
+      border: none;
+      color: #fff6df;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 0.78rem;
+      font-weight: bold;
+      line-height: 1.1;
+      white-space: nowrap;
+      text-shadow:
+        0 2px 0 rgba(0,0,0,.65),
+        0 0 6px rgba(0,0,0,.35);
+      border-radius: 6px;
+      z-index: 4;
+    }
+    .project-label:hover,
+    .project-label:focus-visible,
+    .project-label.poi--near {
+      background: rgba(255, 230, 171, 0.10);
+      outline: 2px solid rgba(255, 230, 171, 0.95);
+      outline-offset: 2px;
+      box-shadow: 0 0 0 3px rgba(255, 230, 171, 0.12);
     }
   </style>
 </head>
@@ -73,43 +102,18 @@
       </div>
 
       <div class="map-stage" id="mapStage">
-        <img src="Carey Lynch Portfolio Projects Map.jpg" alt="Fantasy-style project map for Mr. Lynch's education and web design projects." />
+        <img src="Carey Lynch Portfolio Projects Map.png" alt="Fantasy-style project map for Mr. Lynch's education and web design projects." />
 
         <div id="avatar" class="avatar avatar--hidden" aria-hidden="true" title="Website explorer avatar"></div>
 
-        <!--
-          OPTIONAL TEXT OVERLAY METHOD (recommended):
-          Instead of editing the PNG every time you want to rename a project label,
-          place HTML text on top of the map image.
-
-          Example inside .map-stage:
-          <span class="map-label-overlay" style="left: 10.8%; top: 24.2%;">Project One</span>
-
-          Then add CSS such as:
-          .map-label-overlay {
-            position: absolute;
-            transform: translate(-50%, -50%);
-            z-index: 4;
-            color: #fff6df;
-            font-family: "Press Start 2P", cursive;
-            font-size: 0.55rem;
-            text-shadow: 0 2px 0 rgba(0,0,0,.55), 0 0 6px rgba(0,0,0,.35);
-            pointer-events: none;
-            white-space: nowrap;
-          }
-
-          If you later use HTML overlay labels, move the mouse .poi left/top values below so the hitboxes still match the visible label text.
-          If you move any POI image/icon on the map, adjust data-avatar-cx / data-avatar-cy / data-avatar-size so the avatar square zone still covers that POI image.
-        -->
-
-        <!-- Mouse hitboxes stay on text labels. Avatar uses square image zones. -->
-        <button class="poi" style="left:10.8%; top:24.2%;" data-key="project1" data-avatar-cx="52" data-avatar-cy="83" data-avatar-size="48" aria-label="Open Project One panel"><span class="sr-only">Project One</span></button>
-        <button class="poi" style="left:20.2%; top:43.5%;" data-key="project2" data-avatar-cx="136" data-avatar-cy="186" data-avatar-size="44" aria-label="Open Project Two panel"><span class="sr-only">Project Two</span></button>
-        <button class="poi" style="left:9.7%; top:67.2%;" data-key="project3" data-avatar-cx="77" data-avatar-cy="309" data-avatar-size="88" aria-label="Open Project Three panel"><span class="sr-only">Project Three</span></button>
-        <button class="poi" style="left:33.2%; top:88.2%;" data-key="project4" data-avatar-cx="219" data-avatar-cy="412" data-avatar-size="60" aria-label="Open Project Four panel"><span class="sr-only">Project Four</span></button>
-        <button class="poi" style="left:73.7%; top:74.6%;" data-key="project5" data-avatar-cx="494" data-avatar-cy="345" data-avatar-size="58" aria-label="Open Project Five panel"><span class="sr-only">Project Five</span></button>
-        <button class="poi" style="left:85.4%; top:90.8%;" data-key="project6" data-avatar-cx="600" data-avatar-cy="430" data-avatar-size="62" aria-label="Open Project Six panel"><span class="sr-only">Project Six</span></button>
-        <button class="poi" style="left:92.8%; top:36.6%;" data-key="project7" data-avatar-cx="642" data-avatar-cy="145" data-avatar-size="54" aria-label="Open Project Seven panel"><span class="sr-only">Project Seven</span></button>
+        <!-- Visible map text labels that also serve as the mouse-click buttons -->
+        <button class="poi project-label" style="left:10.8%; top:24.2%;" data-key="project1" data-avatar-cx="52" data-avatar-cy="83" data-avatar-size="48" aria-label="Open Project One panel">Project One</button>
+        <button class="poi project-label" style="left:20.2%; top:43.5%;" data-key="project2" data-avatar-cx="136" data-avatar-cy="186" data-avatar-size="44" aria-label="Open Project Two panel">Project Two</button>
+        <button class="poi project-label" style="left:9.7%; top:67.2%;" data-key="project3" data-avatar-cx="77" data-avatar-cy="309" data-avatar-size="88" aria-label="Open Project Three panel">Project Three</button>
+        <button class="poi project-label" style="left:33.2%; top:88.2%;" data-key="project4" data-avatar-cx="219" data-avatar-cy="412" data-avatar-size="60" aria-label="Open Project Four panel">Project Four</button>
+        <button class="poi project-label" style="left:73.7%; top:74.6%;" data-key="project5" data-avatar-cx="494" data-avatar-cy="345" data-avatar-size="58" aria-label="Open Project Five panel">Project Five</button>
+        <button class="poi project-label" style="left:85.4%; top:90.8%;" data-key="project6" data-avatar-cx="600" data-avatar-cy="430" data-avatar-size="62" aria-label="Open Project Six panel">Project Six</button>
+        <button class="poi project-label" style="left:92.8%; top:36.6%;" data-key="project7" data-avatar-cx="642" data-avatar-cy="145" data-avatar-size="54" aria-label="Open Project Seven panel">Project Seven</button>
       </div>
 
       <div class="map-key" aria-hidden="true">
