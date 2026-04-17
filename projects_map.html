@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mr. Lynch Projects Map</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <aside class="panel intro-panel">
+      <h1>Welcome traveler!</h1>
+      <p>Please take time to explore the regions of the map and learn more about Mr. Lynch's projects in education and in web design!</p>
+
+      <section class="quest-log" aria-labelledby="quest-title">
+        <h2 id="quest-title">Quest Log</h2>
+        <ul>
+          <li>Click any visible map text label to open a pop-up panel.</li>
+          <li>Or enable avatar exploration and move around the map with WASD.</li>
+          <li>Press Enter when the avatar is inside a POI image zone.</li>
+        </ul>
+      </section>
+
+      <div class="avatar-tools">
+        <button id="toggleAvatarBtn" class="tool-btn" type="button">Enable Avatar Exploration</button>
+        <p class="avatar-note">Avatar exploration is optional. Mouse users can still click the text labels on the map exactly as before.</p>
+      </div>
+
+      <section class="status-box" aria-live="polite" id="statusBox">
+        <h3>Project Map Ready</h3>
+        <p>This page uses the same fantasy map design, image, pop-up system, and avatar exploration. Update the map labels on your image and then edit the project titles and descriptions inside <strong>projects_map.js</strong>.</p>
+        <p><strong>Current placeholder labels:</strong> Project One, Project Two, Project Three, Project Four, Project Five, Project Six, and Project Seven.</p>
+      </section>
+    </aside>
+
+    <section class="panel map-card" aria-labelledby="map-heading">
+      <h2 id="map-heading" class="sr-only">Interactive project map</h2>
+
+      <div class="map-stage" id="mapStage">
+        <img src="Carey Lynch Web Portfolio Map.jpg" alt="Fantasy-style project map with labeled points of interest for Mr. Lynch's education and web design projects." />
+
+        <div id="avatar" class="avatar avatar--hidden" aria-hidden="true" title="Website explorer avatar"></div>
+
+        <!--
+          TODO:
+          1) Replace the visible labels directly on the map image itself.
+          2) If you move any label text on the map image, adjust the left/top values below so the mouse hitboxes still sit on the text.
+          3) If you move any POI image/icon on the map image, adjust data-avatar-cx / data-avatar-cy / data-avatar-size so the avatar square zone still covers that POI image.
+          4) Update titles/descriptions/links in projects_map.js.
+        -->
+
+        <!-- Mouse hitboxes stay on text labels. Avatar uses square image zones. -->
+        <button class="poi" style="left:10.8%; top:24.2%;" data-key="project1" data-avatar-cx="52" data-avatar-cy="83" data-avatar-size="48" aria-label="Open Project One panel"><span class="sr-only">Project One</span></button>
+        <button class="poi" style="left:20.2%; top:43.5%;" data-key="project2" data-avatar-cx="136" data-avatar-cy="186" data-avatar-size="44" aria-label="Open Project Two panel"><span class="sr-only">Project Two</span></button>
+        <button class="poi" style="left:9.7%; top:67.2%;" data-key="project3" data-avatar-cx="77" data-avatar-cy="309" data-avatar-size="88" aria-label="Open Project Three panel"><span class="sr-only">Project Three</span></button>
+        <button class="poi" style="left:33.2%; top:88.2%;" data-key="project4" data-avatar-cx="219" data-avatar-cy="412" data-avatar-size="60" aria-label="Open Project Four panel"><span class="sr-only">Project Four</span></button>
+        <button class="poi" style="left:73.7%; top:74.6%;" data-key="project5" data-avatar-cx="494" data-avatar-cy="345" data-avatar-size="58" aria-label="Open Project Five panel"><span class="sr-only">Project Five</span></button>
+        <button class="poi" style="left:85.4%; top:90.8%;" data-key="project6" data-avatar-cx="600" data-avatar-cy="430" data-avatar-size="62" aria-label="Open Project Six panel"><span class="sr-only">Project Six</span></button>
+        <button class="poi" style="left:92.8%; top:36.6%;" data-key="project7" data-avatar-cx="642" data-avatar-cy="145" data-avatar-size="54" aria-label="Open Project Seven panel"><span class="sr-only">Project Seven</span></button>
+      </div>
+
+      <div class="map-key" aria-hidden="true">
+        <span class="chip">Mouse clicks target text labels</span>
+        <span class="chip">Avatar Enter targets square image zones</span>
+        <span class="chip">Faint wizard glow enabled</span>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <article class="modal">
+      <header class="modal-header">
+        <h2 id="modalTitle">Project</h2>
+        <button class="close-btn" id="closeModal" aria-label="Close panel">Close</button>
+      </header>
+      <div class="modal-body" id="modalBody"></div>
+    </article>
+  </div>
+
+  <script src="projects_map.js"></script>
+</body>
+</html>
