@@ -1,18 +1,22 @@
 const entries = {
   project1: {
-    title: 'Project One',
+    title: 'Harkness Discussion Table Tracker',
     body: `
-      <p>Add a short description of this project here.</p>
-      <p>Replace this text with details about the project in education or web design.</p>
-      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
+      <p>This project was inspired by the Harkness Discussion table.</p>
+      <p>This project is a stand alone webpage that allows teachers to upload csv files (or to manually enter) a student roster, a scoring rubric, and a set of discussion questions. Once teachers have uploaded this information, they are able to open a second window for an extended desktop display. This will display a student speaking queue that will update live based upon teacher actions, the discussion questions, and the scoring rubric. 
+      The teacher will be able to continue working on their own screen on the main webpage to add students to the queue, award points to speakers using the rubric categories and values, make connections between students as they speak, and end the discussion. Once the discussion has ended, the student display page will update with the final Harkness table image. Teachers can export their discussion results as an excel spreadsheet and print the final 
+      Harkness table with student connections.</p>
+      <p><a href="https://mrlynchteaches.github.io/harkness_discussion/" target="_blank" rel="noopener">Mr. Lynch's Harkness Discussion Table Tracker</a></p>
     `
   },
   project2: {
-    title: 'Project Two',
+    title: 'Georgia Standards Interdisciplinary Constellation',
     body: `
-      <p>Add a short description of this project here.</p>
-      <p>Replace this text with details about the project in education or web design.</p>
-      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
+      <p>This project was inspired by the United Nations Radial Web of cultural connections found here: https://ich.unesco.org/en/dive.</p>
+      <p>This website, which is still under construction, will allow teachers to select their course from the list of available GA DOE courses, select their current standards, and then search for standards from other courses to see if there are opportunities for interdisciplinary or cross-curricular lessons. 
+      Teachers can filter results for certain grade levels, subjects, and the strength of the connection. Under the current code, connections are based upon skills, rather than on content. I hope to update this so that the content becomes the primary means of connection rather than on skills like expain, describe, etc. 
+      For example, exponential functions is a concept explored as content in math, science, and economics and having those connections would be more meaningful for a teacher to work towards a project that is interdisciplinary or cross-curricular.</p>
+      <p><a href="https://mrlynchteaches.github.io/georgia_standards_interdisciplinary_web/" target="_blank" rel="noopener">Mr. Lynch's Georgia Standards Interdisciplinary Constellation</a></p>
     `
   },
   project3: {
@@ -133,7 +137,9 @@ function getNearestPoi() {
     const targetSize = Number(button.dataset.avatarSize);
     const halfSize = targetSize / 2;
 
-    const insideSquare = Math.abs(avatarPxX - targetCxPx) <= halfSize && Math.abs(avatarPxY - targetCyPx) <= halfSize;
+    const insideSquare =
+      Math.abs(avatarPxX - targetCxPx) <= halfSize &&
+      Math.abs(avatarPxY - targetCyPx) <= halfSize;
 
     if (insideSquare) {
       const dx = avatarPxX - targetCxPx;
@@ -226,7 +232,9 @@ buttons.forEach((button) => {
   button.addEventListener('click', () => openModal(button.dataset.key, button));
 });
 closeModalButton.addEventListener('click', closeModal);
-overlay.addEventListener('click', (event) => { if (event.target === overlay) closeModal(); });
+overlay.addEventListener('click', (event) => {
+  if (event.target === overlay) closeModal();
+});
 
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && !overlay.hidden) {
@@ -236,11 +244,14 @@ document.addEventListener('keydown', (event) => {
   if (!avatarState.enabled) return;
 
   const key = event.key.toLowerCase();
+
   if (isArrowKey(key)) event.preventDefault();
+
   if (isMovementKey(key)) {
     event.preventDefault();
     setMovementKeyState(key, true);
   }
+
   if (event.key === 'Enter' && avatarState.nearestPoi) {
     event.preventDefault();
     openModal(avatarState.nearestPoi.dataset.key, avatarState.nearestPoi);
@@ -250,7 +261,9 @@ document.addEventListener('keydown', (event) => {
 document.addEventListener('keyup', (event) => {
   if (!avatarState.enabled) return;
   const key = event.key.toLowerCase();
+
   if (isArrowKey(key)) event.preventDefault();
+
   if (isMovementKey(key)) {
     event.preventDefault();
     setMovementKeyState(key, false);
@@ -258,10 +271,13 @@ document.addEventListener('keyup', (event) => {
 });
 
 toggleAvatarButton.addEventListener('click', () => {
-  if (avatarState.enabled) stopAvatar(); else startAvatar();
+  if (avatarState.enabled) stopAvatar();
+  else startAvatar();
 });
 
 mapStage.addEventListener('mouseleave', () => {
   if (!avatarState.enabled) return;
-  Object.keys(avatarState.keys).forEach((key) => { avatarState.keys[key] = false; });
+  Object.keys(avatarState.keys).forEach((key) => {
+    avatarState.keys[key] = false;
+  });
 });
