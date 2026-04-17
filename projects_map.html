@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +22,14 @@
       </section>
 
       <div class="avatar-tools">
+        <a class="tool-btn" href="https://mrlynchteaches.github.io/fantasy_website_portfolio/" style="display:inline-block; text-decoration:none; margin-right:0.5rem; margin-bottom:0.5rem;">Return Home</a>
         <button id="toggleAvatarBtn" class="tool-btn" type="button">Enable Avatar Exploration</button>
         <p class="avatar-note">Avatar exploration is optional. Mouse users can still click the text labels on the map exactly as before.</p>
       </div>
 
       <section class="status-box" aria-live="polite" id="statusBox">
         <h3>Project Map Ready</h3>
-        <p>This page uses the same fantasy map design, image, pop-up system, and avatar exploration. Update the map labels on your image and then edit the project titles and descriptions inside <strong>projects_map.js</strong>.</p>
+        <p>This page uses the same fantasy map design, pop-up system, and avatar exploration. Replace the map image file with your new PNG and then edit the project titles and descriptions inside <strong>projects_map.js</strong>.</p>
         <p><strong>Current placeholder labels:</strong> Project One, Project Two, Project Three, Project Four, Project Five, Project Six, and Project Seven.</p>
       </section>
     </aside>
@@ -38,16 +38,33 @@
       <h2 id="map-heading" class="sr-only">Interactive project map</h2>
 
       <div class="map-stage" id="mapStage">
-        <img src="Carey Lynch Portfolio Projects Map.jpg" alt="Fantasy-style project map with labeled points of interest for Mr. Lynch's education and web design projects." />
+        <img src="Carey Lynch Portfolio Projects Map.png" alt="Fantasy-style project map for Mr. Lynch's education and web design projects." />
 
         <div id="avatar" class="avatar avatar--hidden" aria-hidden="true" title="Website explorer avatar"></div>
 
         <!--
-          TODO:
-          1) Replace the visible labels directly on the map image itself.
-          2) If you move any label text on the map image, adjust the left/top values below so the mouse hitboxes still sit on the text.
-          3) If you move any POI image/icon on the map image, adjust data-avatar-cx / data-avatar-cy / data-avatar-size so the avatar square zone still covers that POI image.
-          4) Update titles/descriptions/links in projects_map.js.
+          OPTIONAL TEXT OVERLAY METHOD (recommended):
+          Instead of editing the PNG every time you want to rename a project label,
+          place HTML text on top of the map image.
+
+          Example inside .map-stage:
+          <span class="map-label-overlay" style="left: 10.8%; top: 24.2%;">Project One</span>
+
+          Then add CSS such as:
+          .map-label-overlay {
+            position: absolute;
+            transform: translate(-50%, -50%);
+            z-index: 4;
+            color: #fff6df;
+            font-family: "Press Start 2P", cursive;
+            font-size: 0.55rem;
+            text-shadow: 0 2px 0 rgba(0,0,0,.55), 0 0 6px rgba(0,0,0,.35);
+            pointer-events: none;
+            white-space: nowrap;
+          }
+
+          If you later use HTML overlay labels, move the mouse .poi left/top values below so the hitboxes still match the visible label text.
+          If you move any POI image/icon on the map, adjust data-avatar-cx / data-avatar-cy / data-avatar-size so the avatar square zone still covers that POI image.
         -->
 
         <!-- Mouse hitboxes stay on text labels. Avatar uses square image zones. -->
