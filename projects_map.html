@@ -5,12 +5,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mr. Lynch Projects Map</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Local fallback styles so the home button is visible even if the shared CSS differs */
+    .home-button-wrap {
+      margin: 0 0 12px;
+    }
+    .home-button {
+      display: inline-block;
+      text-decoration: none;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 229, 166, 0.44);
+      background: rgba(255,255,255,.05);
+      color: #fff5da;
+      font: inherit;
+      line-height: 1.2;
+    }
+    .home-button:hover,
+    .home-button:focus-visible {
+      background: rgba(215, 181, 109, 0.16);
+      outline: none;
+    }
+    .map-card-topbar {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      padding: 0 4px 10px;
+    }
+  </style>
 </head>
 <body>
   <main class="page">
     <aside class="panel intro-panel">
       <h1>Welcome traveler!</h1>
       <p>Please take time to explore the regions of the map and learn more about Mr. Lynch's projects in education and in web design!</p>
+
+      <div class="home-button-wrap">
+        <a class="home-button" href="https://mrlynchteaches.github.io/fantasy_website_portfolio/">Return Home</a>
+      </div>
 
       <section class="quest-log" aria-labelledby="quest-title">
         <h2 id="quest-title">Quest Log</h2>
@@ -22,7 +54,6 @@
       </section>
 
       <div class="avatar-tools">
-        <a class="tool-btn" href="https://mrlynchteaches.github.io/fantasy_website_portfolio/" style="display:inline-block; text-decoration:none; margin-right:0.5rem; margin-bottom:0.5rem;">Return Home</a>
         <button id="toggleAvatarBtn" class="tool-btn" type="button">Enable Avatar Exploration</button>
         <p class="avatar-note">Avatar exploration is optional. Mouse users can still click the text labels on the map exactly as before.</p>
       </div>
@@ -36,6 +67,10 @@
 
     <section class="panel map-card" aria-labelledby="map-heading">
       <h2 id="map-heading" class="sr-only">Interactive project map</h2>
+
+      <div class="map-card-topbar">
+        <a class="home-button" href="https://mrlynchteaches.github.io/fantasy_website_portfolio/">Return Home</a>
+      </div>
 
       <div class="map-stage" id="mapStage">
         <img src="Carey Lynch Portfolio Projects Map.png" alt="Fantasy-style project map for Mr. Lynch's education and web design projects." />
