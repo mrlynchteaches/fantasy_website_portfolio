@@ -202,8 +202,7 @@ function stopAvatar() {
   }
   statusBox.innerHTML = `
     <h3>Project Map Ready</h3>
-    <p>This page uses the same fantasy map design, image, pop-up system, and avatar exploration. Update the map labels on your image and then edit the project titles and descriptions inside <strong>projects_map.js</strong>.</p>
-    <p><strong>Current placeholder labels:</strong> Project One, Project Two, Project Three, Project Four, Project Five, Project Six, and Project Seven.</p>
+    <p>This page uses the same fantasy map style, pop-up system, and avatar exploration. Update the map labels on your image and then edit the project titles and descriptions inside <strong>projects_map.js</strong>.</p>
   `;
 }
 
