@@ -3,7 +3,7 @@ const entries = {
     title: 'Harkness Discussion Table Tracker',
     body: `
       <p>This project was inspired by the Harkness Discussion table.</p>
-      <p>This project is a stand alone webpage that allows teachers to upload csv files (or to manually enter) a student roster, a scoring rubric, and a set of discussion questions. Once teachers have uploaded this information, they are able to open a second window for an extended desktop display. This will display a student speaking queue that will update live based upon teacher actions, the discussion questions, and the scoring rubric. 
+      <p>This project is a stand alone webpage that allows teachers to upload csv files (or to manually enter) a student roster, a scoring rubric, and a set of discussion questions. Once teachers have uploaded this information, they are able to open a second window for an extended desktop display. This will display the discussion questions, the scoring rubric, and a student speaking queue that will update live based upon teacher actions on the first webpage display (for example, add student to queue). 
       The teacher will be able to continue working on their own screen on the main webpage to add students to the queue, award points to speakers using the rubric categories and values, make connections between students as they speak, and end the discussion. Once the discussion has ended, the student display page will update with the final Harkness table image. Teachers can export their discussion results as an excel spreadsheet and print the final 
       Harkness table with student connections.</p>
       <p><a href="https://mrlynchteaches.github.io/harkness_discussion/" target="_blank" rel="noopener">Mr. Lynch's Harkness Discussion Table Tracker</a></p>
