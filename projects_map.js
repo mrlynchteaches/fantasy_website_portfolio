@@ -20,11 +20,14 @@ const entries = {
     `
   },
   project3: {
-    title: 'Project Three',
+    title: 'Schoolwide Project Calendar and Curricular Overlap',
     body: `
-      <p>Add a short description of this project here.</p>
-      <p>Replace this text with details about the project in education or web design.</p>
-      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
+      <p>A local storage template for a schoolwide calendar to determine when PBLs are being implemented and which teachers and courses may have curricular, deployment, or grade level overlap.</p>
+      <p>This site is currently operating with local storage, but hopefully will be deployed as a live site with a database to preserve entries for multiple years. Teachers can input their name, course, semester, grade levels taught, title of their PBL, dates of implementation, and priority standards. Once submitted the site will update
+      the calendar in the next section with Gantt chart showing start and end time of the PBL based upon the month of implementation. The course will auto sort into a discipline, which is color coordinated. This section also allows for users to select semesters, grade level filters, see a condensed view (admin view) or a full view, and search for a teacher or course. 
+      The next section is composed of two columns. The right-hand column displays current entries with short overviews. The left-hand column displays potential curricular overlaps based upon common content nouns derived from the teacher entry for standards, time of implementation, and grade levels. Clicking on view potential overlap details will allow teachers to see who in the building is implementing the project, 
+      and which content may be overlapping. The hope is to update the site regularly during PD days in each semester to drive cross-curricular exploration in the building. </p>
+      <p><a href="https://mrlynchteaches.github.io/IAPBLPlanning/" target="_blank" rel="noopener">PBL Planning Calendar and Curricular Overlap</a></p>
     `
   },
   project4: {
