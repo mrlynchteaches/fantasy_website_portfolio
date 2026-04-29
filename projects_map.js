@@ -31,12 +31,12 @@ const entries = {
     `
   },
   project4: {
-    title: 'Project Four',
+    title: 'Professional Development Facilitation',
     body: `
-      <p>Add a short description of this project here.</p>
-      <p>Replace this text with details about the project in education or web design.</p>
-      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
-    `
+      <p>Professional Devleop Guides.</p>
+      <p>These resources represent PD planning and facilitation that Mr. Lynch has developed over the course of his time as PD Facilitator.</p>
+      <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQCuG5-SWeCaTqpVwzmDVVjcAfA0ekl5uksRcsgZdiBAOsU?e=VeNGcN" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a></p>
+    ` <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQDgLKm4FpG5TprbP0D7OTNlAW3qgsDg9yRj2TEMVLNDctM?e=yql0xo" target="_blank" rel="noopener">Innovation Academy 2025-26 PD Plan</a></p>
   },
   project5: {
     title: 'Project Five',
