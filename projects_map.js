@@ -35,8 +35,8 @@ const entries = {
     body: `
       <p>Professional Devleop Guides</p>
       <p>These resources represent PD planning and facilitation that Mr. Lynch has developed over the course of his time as PD Facilitator.</p>
-      <p><a href="6 Day PD Planner for PBLs.docx" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a>,
-      <a href="IA PD Planner 202526 School Year.docx" target="_blank" rel="noopener">Innovation Academy PD Plan 202526</a></p>
+      <p><a href="6 Day PD Planner for PBLs.docx" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a>
+      
   },
   project5: {
     title: 'Project Five',
