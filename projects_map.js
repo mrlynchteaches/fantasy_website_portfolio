@@ -31,11 +31,13 @@ const entries = {
     `
   },
   project4: {
-    title: 'Project Four',
+    title: 'Professional Development Facilitation',
     body: `
-      <p>Add a short description of this project here.</p>
-      <p>Replace this text with details about the project in education or web design.</p>
-      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
+      <p>These are plans for PD over the course of a year.</p>
+      <p>The first is a Professional Development Plan to introduce PBL to a school and to help in converting projets into project-based learning.
+      The second is the 25/26 PD plan for Innovation Academy High School.</p>
+      <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQCuG5-SWeCaTqpVwzmDVVjcAfA0ekl5uksRcsgZdiBAOsU?e=R0s2sz" target="_blank" rel="noopener">Six Day PD Programming for Introducing PBLs</a></p>
+      <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQDgLKm4FpG5TprbP0D7OTNlAW3qgsDg9yRj2TEMVLNDctM?e=umkzYN" target="_blank" rel="noopener">Innovation Academy 25/26 PD</a></p>
     `
   },
   project5: {
