@@ -36,7 +36,7 @@ const entries = {
       <p>Add a short description of this project here.</p>
       <p>Replace this text with details about the project in education or web design.</p>
       <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
-      
+    `
   },
   project5: {
     title: 'Project Five',
