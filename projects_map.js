@@ -61,7 +61,7 @@ const entries = {
       <p>Replace this text with details about the project in education or web design.</p>
       <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
     `
-  }
+  },
 };
 
 const overlay = document.getElementById('modalOverlay');
