@@ -35,8 +35,8 @@ const entries = {
     body: `
       <p>Professional Devleop Guides</p>
       <p>These resources represent PD planning and facilitation that Mr. Lynch has developed over the course of his time as PD Facilitator.</p>
-      <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQCuG5-SWeCaTqpVwzmDVVjcAfA0ekl5uksRcsgZdiBAOsU?e=VeNGcN" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a></p>
-    ` <p><a href="https://fultonk12-my.sharepoint.com/:w:/g/personal/lynchd1_fultonschools_org/IQDgLKm4FpG5TprbP0D7OTNlAW3qgsDg9yRj2TEMVLNDctM?e=yql0xo" target="_blank" rel="noopener">Innovation Academy 2025-26 PD Plan</a></p>
+      <p><a href="6 Day PD Planner for PBLs.docx" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a></p>
+    ` <p><a href="IA PD Planner 202526 School Year.docx" target="_blank" rel="noopener">Innovation Academy 2025-26 PD Plan</a></p>
   },
   project5: {
     title: 'Project Five',
