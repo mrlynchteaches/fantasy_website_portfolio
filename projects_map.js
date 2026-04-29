@@ -31,11 +31,11 @@ const entries = {
     `
   },
   project4: {
-    title: 'Professional Development Facilitation',
+    title: 'Project Four',
     body: `
-      <p>Professional Devleop Guides</p>
-      <p>These resources represent PD planning and facilitation that Mr. Lynch has developed over the course of his time as PD Facilitator.</p>
-      <p><a href="6 Day PD Planner for PBLs.docx" target="_blank" rel="noopener">Six Day PD Series for Schoolwide Adoption of PBL</a>
+      <p>Add a short description of this project here.</p>
+      <p>Replace this text with details about the project in education or web design.</p>
+      <p><a href="#" target="_blank" rel="noopener">Optional external project link</a></p>
       
   },
   project5: {
