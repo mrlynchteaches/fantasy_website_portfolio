@@ -87,7 +87,7 @@ const entries = {
         </ul>
     `
   },
-  portfolio: { title: 'Portfolio', body: `<p><a href="projects_map.html">Open My Portfoio of Web Design and Teacher Projects.p</a></p>` },
+  portfolio: { title: 'Portfolio', body: `<p><a href="projects_map.html">Open My Portfoio of Web Design and Teacher Projects.</a></p>` },
   blog: { title: 'Blog', body: `<p><a href="https://mrlynchteaches.godaddysites.com/blog">An older blog until I develop this website further.</a></p>` },
   contact: {
     title: 'Contact',
